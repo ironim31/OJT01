@@ -1,0 +1,11 @@
+*{
+  box-sizing: border-box;
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+.content_inner{
+  margin: 0 auto;
+  max-width: 77%;
+}

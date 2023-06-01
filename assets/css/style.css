@@ -1,0 +1,94 @@
+body {
+    width: 77vw;
+}
+
+
+/* ヘッダー */
+header {
+    width: 100%;
+    background: #043873;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_left img{
+    width: 191px;
+}
+
+/* ヘッダー右 */
+.header_right{
+    color: white;
+    font-size: 18px;
+}
+
+.menu img{
+    width: 29px;
+}
+
+.kv {
+    padding: 140px 220px;
+    width: 1920px;
+    height: 880px;
+    left: 0px;
+    top: 92px;
+
+    background: #043873;
+}
+
+
+/* kv */
+.kv{
+    height: 880px;
+    padding: 140px 220px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+h1{
+    font-size: 64px;
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+
+.kv img{
+    width: 900px;
+}
+
+
+/* .img_right */
+.img_right{
+    width: 100%;
+    padding: 140px 220px;
+    display: flex;
+    align-items: center;
+}
+
+.description{
+    margin-right: 60px;
+}
+h2{
+    font-size: 72px;
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+
+.description span{
+    font-size: 18px;
+}
+
+/* img_left */
+.img_left{
+    width: 100%;
+    padding: 140px 220px;
+    display: flex;
+}
+
+.img_left .description{
+    margin-left: 60px;
+    order: 2;
+}
+.img_left img{
+    order: 1;
+}

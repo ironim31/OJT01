@@ -1,6 +1,4 @@
-body {
-    width: 77vw;
-}
+body {}
 
 
 /* ヘッダー */
@@ -10,19 +8,30 @@ header {
     color: white;
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
+    height: 92px;
+width: 1920px;
+left: 0px;
+top: 0px;
+border-radius: 0px;
+padding: 16px 220px 16px 220px;
 }
-
-.header_left img{
+.header_right{
+width: 60%;
+display: flex;
+justify-content: space-between;
+}
+.header_left img {
     width: 191px;
 }
 
 /* ヘッダー右 */
-.header_right{
+.header_right {
     color: white;
     font-size: 18px;
 }
 
-.menu img{
+.menu img {
     width: 29px;
 }
 
@@ -38,7 +47,7 @@ header {
 
 
 /* kv */
-.kv{
+.kv {
     height: 880px;
     padding: 140px 220px;
     color: white;
@@ -46,49 +55,248 @@ header {
     align-items: center;
 }
 
-h1{
+h1 {
     font-size: 64px;
     font-weight: bold;
     margin-bottom: 24px;
 }
 
-.kv img{
+.kv img {
     width: 900px;
 }
 
 
 /* .img_right */
-.img_right{
-    width: 100%;
+.img_right {
     padding: 140px 220px;
     display: flex;
     align-items: center;
+    margin-bottom: 100px;
 }
 
-.description{
+.description {
     margin-right: 60px;
+    width: 800px;
 }
-h2{
+
+h2 {
     font-size: 72px;
     font-weight: bold;
     margin-bottom: 24px;
 }
 
-.description span{
+.description span {
     font-size: 18px;
 }
 
+.img_right img {
+    width: 859px;
+    height: auto;
+}
+
 /* img_left */
-.img_left{
+.img_left {
     width: 100%;
     padding: 140px 220px;
     display: flex;
+    align-items: center;
+    margin-bottom: 100px;
 }
 
-.img_left .description{
+.img_left .description {
     margin-left: 60px;
     order: 2;
 }
-.img_left img{
+
+.img_left img {
     order: 1;
+}
+
+.img_left img {
+    width: 859px;
+    height: auto;
+}
+
+/* extention */
+.extention {
+    height: 759px;
+    background: #043873;
+    color: white;
+}
+
+/* Choose Your Plan */
+.price_heading {
+    padding: 140px 220px;
+    margin: 0 auto;
+}
+
+/* プライスリスト */
+
+.price_list {
+    width: 472.33px;
+    height: 634px;
+    border: solid 1px #FFE492;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 44px;
+}
+
+h3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 25px;
+}
+
+.price {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    /* ボックスの高さと同一 */
+    letter-spacing: -0.02em;
+    color: #212529;
+    margin-bottom: 25px;
+}
+
+.price_list span {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    /* ボックスの高さと同一、または128% */
+    letter-spacing: -0.02em;
+    color: #212529;
+    margin-bottom: 25px;
+}
+
+.price_list li {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    /* ボックスの高さと同一、または125% */
+
+    letter-spacing: -0.02em;
+    color: #212529;
+    margin-bottom: 32px;
+}
+
+.price_box {
+    width: 1481px;
+    height: 761px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.center {
+    text-align: center;
+}
+
+/*  you work everywhere */
+.blackcom {
+    height: 574px;
+    width: 1921px;
+    left: 0px;
+    padding: 140px 220px 140px 220px;
+    background-color: #043873;
+    color: white;
+    text-align: center;
+}
+
+/* sponsors */
+#id{
+    margin-bottom: 100px;
+}
+
+.sponsors{
+   width: 1922px;
+   display: flex;
+   justify-content: space-between;
+   padding: 140px 220px;
+}
+
+.sponsors img{
+    height: 70.22px;
+    width: auto;
+}
+
+/* work with your favorite apps */
+#apps{
+    width: 1920px;
+    height: 750.8px;
+    padding: 140px, 220px, 140px, 220px;
+    color: white;
+    background: #043873;
+}
+
+/* clients */
+.clients{
+    height: 994.4608154296875px;
+width: 1919px;
+left: 0px;
+top: 7876.015625px;
+border-radius: 0px;
+padding: 140px 220px 140px 220px;
+display: flex;
+justify-content: space-between;
+
+}
+.voice{
+    width: 471.67px;
+height: 498.46px;
+box-shadow: 15px 10px 50px rgba(0, 0, 0, 0.1);
+border-radius: 10px;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: center;
+padding: 60px 40px;
+}
+
+.quote{
+    margin-bottom: 32px;
+}
+
+.voice p{
+    border-bottom: solid 1px #212529;
+    padding-bottom: 40px;
+    margin-bottom: 60px;
+}
+
+.avater{
+    width: 95px;
+    height: 95px;
+}
+
+#bluequote{
+    background-color: #4F9CF9;
+}
+.profile{
+    display: flex;
+    align-items: center;
+}
+.profileDetails{
+    margin-left: 42px;
+}
+.name {
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+.name2 {
+    display: block;
+    font-weight: 400;
+}
+#bluequote .name {
+    color: #043873;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+#bluequote .name2 {
+    color: white;
+    display: block;
+    font-weight: 400;
 }

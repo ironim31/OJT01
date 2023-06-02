@@ -58,3 +58,28 @@
   position: absolute;
   right: 10px;
 }
+
+.u-flexCenter {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.u-flexColumnGap10 {
+  -webkit-column-gap: 2%;
+  column-gap: 2%;
+}
+
+footer {
+  background-color: #043873;
+  padding-bottom: 32px;
+}
+
+.footer_nav {
+  -webkit-column-gap: 6%;
+  column-gap: 6%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 67px;
+}

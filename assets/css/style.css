@@ -1,13 +1,23 @@
+@font-face {
+    font-family: 'inter';
+    src: url('/assets/Inter/Inter-VariableFont_slnt\,wght.ttf') format('truetype');
+    }
+
+body {
+    font-family: 'inter', sans-serif
+        }
+.content_inner{
+    max-width: 77%;
+    margin: 0 auto;
+}
 /* ヘッダー */
 header {
-    width: 100%;
     background: #043873;
     color: white;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
     height: 92px;
-    width: 1920px;
     left: 0px;
     top: 0px;
     border-radius: 0px;
@@ -37,7 +47,6 @@ header {
 
 .kv {
     padding: 140px 220px;
-    width: 1920px;
     height: 880px;
     left: 0px;
     top: 92px;
@@ -108,7 +117,6 @@ h2 {
 
 /* img_left */
 .img_left {
-    width: 100%;
     padding: 140px 220px;
     display: flex;
     align-items: center;
@@ -136,8 +144,10 @@ h2 {
 /* extention */
 .extention {
     height: 759px;
-    background: #043873;
     color: white;
+}
+.navy{
+    background: #043873;
 }
 
 /* Choose Your Plan */
@@ -145,6 +155,7 @@ h2 {
     padding: 140px 220px;
     margin: 0 auto;
 }
+
 
 /* プライスリスト */
 
@@ -204,6 +215,7 @@ h3 {
 .price_box {
     width: 1481px;
     height: 761px;
+    margin:0 auto;
     display: flex;
     justify-content: space-between;
 }
@@ -215,7 +227,6 @@ h3 {
 /*  you work everywhere */
 .blackcom {
     height: 574px;
-    width: 1921px;
     left: 0px;
     padding: 140px 220px 140px 220px;
     background-color: #043873;
@@ -229,7 +240,6 @@ h3 {
 }
 
 .sponsors {
-    width: 1922px;
     display: flex;
     justify-content: space-between;
     padding: 140px 220px;
@@ -242,7 +252,6 @@ h3 {
 
 /* work with your favorite apps */
 #apps {
-    width: 1920px;
     height: 750.8px;
     padding: 140px, 220px, 140px, 220px;
     color: white;
@@ -252,7 +261,6 @@ h3 {
 /* clients */
 .clients {
     height: 994.4608154296875px;
-    width: 1919px;
     left: 0px;
     top: 7876.015625px;
     border-radius: 0px;

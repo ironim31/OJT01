@@ -8,6 +8,10 @@
   padding: 0;
 }
 
+.btn, .btn:after {
+  display: inline-block;
+}
+
 .section{
   padding: 140px 0;
 }
@@ -33,6 +37,12 @@
 
 .heading2[data-position=center]{
   text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .heading2{
+      font-size: 11vw;
+  }
 }
 
 .u-mb40 {
@@ -71,6 +81,20 @@
   column-gap: 2%;
 }
 
+.u-mb20 {
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .u-spTextCenter {
+    text-align: center;
+  }
+}
+
+footer, footer a {
+  color: #fff;
+}
+
 footer {
   background-color: #043873;
   padding-bottom: 32px;
@@ -82,4 +106,114 @@ footer {
   display: flex;
   justify-content: space-between;
   margin-bottom: 67px;
+}
+
+@media screen and (max-width: 767px) {
+  .footer_nav {
+    flex-direction: column;
+  }
+}
+
+.footer_item {
+  line-height: 1.222;
+  width: 13.8%;
+}
+
+@media screen and (max-width: 767px) {
+  .footer_item {
+    width: 100%;
+  }
+}
+
+
+.footer_item-title {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.footer_item-title.bigger {
+  font-size: 28px;
+  margin-bottom: 18px;
+}
+
+.footer_item li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .footer_item:not(:last-child) {
+    margin-bottom: 80px;
+  }
+}
+
+.footer_logo {
+  margin-bottom: 24px;
+}
+
+.footer_bar {
+  border-top: 1px solid #2e4e73;
+  display: flex;
+  font-size: 16px;
+  justify-content: space-between;
+  padding-top: 32px;
+}
+
+@media screen and (max-width: 767px) {
+  .footer_bar {
+    border: none;
+    flex-direction: column;
+  }
+}
+
+.footer_left {
+  width: 50%;
+}
+
+@media screen and (max-width: 767px) {
+  .footer_left {
+    width: 100%;
+  }
+}
+
+.footer_left ul {
+  display: flex;
+}
+
+@media screen and (max-width: 767px) {
+  .footer_left ul {
+    flex-direction: column;
+  }
+
+  .footer_left li {
+    margin-bottom: 20px;
+  }
+}
+
+.footer_left li:not(:last-child) {
+  margin-right: 8.1%;
+}
+
+@media screen and (max-width: 767px) {
+  .footer_left li:not(:last-child) {
+    margin-right: 0;
+  }
+}
+
+.footer_right ul {
+  -webkit-column-gap: 32px;
+  column-gap: 32px;
+  display: flex;
+}
+
+@media screen and (max-width: 767px) {
+  .footer_right {
+    border-top: 1px solid #2e4e73;
+    padding-top: 32px;
+  }
+
+  .footer_right ul {
+    display: flex;
+    justify-content: center;
+  }
 }

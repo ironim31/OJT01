@@ -62,10 +62,8 @@ header {
     height: 880px;
     left: 0px;
     top: 92px;
-
     background: #043873;
     height: 880px;
-    padding: 140px 220px;
     color: white;
     display: flex;
     align-items: center;
@@ -135,10 +133,10 @@ h2 {
     margin-top: 60px;
 }
 
-.img_right img {
+/* .img_right img {
     width: 859px;
     height: auto;
-}
+} */
 
 /* img_left */
 .img_left {
@@ -161,8 +159,8 @@ h2 {
 }
 
 .img_left img {
-    width: 859px;
-    height: auto;
+    /* width: 859px;
+    height: auto; */
     order: 1;
 }
 
@@ -241,7 +239,7 @@ h3 {
 }
 
 .price_box {
-    width: 1481px;
+    /* width: 1481px; */
     height: 761px;
     margin:0 auto 140px;
     display: flex;
@@ -501,3 +499,125 @@ a:hover{
     background-repeat: no-repeat;
     background-position: 0 54px;
 }
+
+
+
+/* ここからレスポンシブ */
+@media screen and (max-width: 767px) {
+.content_inner{
+    max-width: 100%;
+    padding: 0 16px;
+}
+header{
+    padding: 16px;
+}
+.header_left{
+    width: 41.875%;
+    height: auto;
+}
+.header_right{
+    display: none;
+}
+h2{
+    font-size: 36px;
+    text-align: center;
+}
+/* kv */
+h1{
+    text-align: center;
+}
+.kv{
+    height: auto;
+    padding: 80px 16px 80px 16px;
+    background-size: cover;
+}
+#kv{
+    display: flex;
+    flex-direction: column;
+}
+
+.kv img{
+    width: 89.9371069%;
+}
+
+.kvContainer span{
+    text-align: center;
+}
+/* project management */
+.img_right{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+}
+.img_right img{
+    padding: 0;
+    margin-top: 60px;
+}
+.description{
+    margin-right: 0;
+    width: 100vw;
+    text-align: center;
+}
+
+.img_left{
+    padding: 0;
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 80px;
+}
+.img_left img{
+    margin-top: 60px;
+}
+.center2{
+    text-align: center;
+    display: block;
+}
+a{
+    display: inline;
+    padding: 20px 40px 20px 40px;
+}
+
+.price_heading {
+    padding: 80px 16px;
+    margin: 0 auto;
+}
+
+.price_box {
+    height: auto;
+    display: block;
+}
+.price_list{
+    margin: 60px auto 0;
+}
+
+.blackcom{
+height: auto;
+padding: 80px 16px 80px 16px;
+}
+
+.sponsors{
+    display: block;
+    padding: 0;
+    
+}
+
+.sponsors img{
+    margin-bottom: 100px;
+}
+
+.clients{
+    display: block;
+    height: auto;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.content_inner .description{
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.img_left .description{
+    margin-left: 0px;
+}
+}/* これ消しちゃダメ！ */

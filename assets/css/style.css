@@ -9,12 +9,13 @@ body {
 .content_inner{
     max-width: 77%;
     margin: 0 auto;
+    display: flex;
 }
 /* ヘッダー */
 header {
+    width: 100%;
     background: #043873;
     color: white;
-    display: flex;
     justify-content: space-between;
     align-items: baseline;
     height: 92px;
@@ -27,6 +28,7 @@ header {
 .header_right {
     width: 60%;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
 }
 
@@ -34,7 +36,10 @@ header {
     width: 191px;
 }
 
-
+.loginicon{
+    background-color: #FFE492;
+    color: #043873;
+}
 /* ヘッダー右 */
 .header_right {
     color: white;
@@ -45,6 +50,13 @@ header {
     width: 29px;
 }
 
+#header{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* kv */
+
 .kv {
     padding: 140px 220px;
     height: 880px;
@@ -52,16 +64,15 @@ header {
     top: 92px;
 
     background: #043873;
-}
-
-
-/* kv */
-.kv {
     height: 880px;
     padding: 140px 220px;
     color: white;
     display: flex;
     align-items: center;
+    background-image: url(/assets/img/ElementKv.png);
+    background-repeat: no-repeat;
+    background-position: 34px 120px;
+    background-size: 100%;
 }
 
 h1 {
@@ -71,7 +82,7 @@ h1 {
 }
 
 .kv img {
-    width: 900px;
+    width: 60.8%;
 }
 
 .kv a img {
@@ -80,6 +91,18 @@ h1 {
     display: block;
     margin-top: 60px;
 }
+
+.kvContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.kvContainer span{
+    display: inline-block;
+    margin-bottom: 60px;
+}
+
 /* .img_right */
 .img_right {
     padding: 140px 220px;
@@ -101,6 +124,8 @@ h2 {
 
 .description span {
     font-size: 18px;
+    display: inline-block;
+    margin-bottom: 60px;
 }
 
 .img_right a img {
@@ -156,6 +181,9 @@ h2 {
     margin: 0 auto;
 }
 
+#price{
+    display: block;
+}
 
 /* プライスリスト */
 
@@ -215,13 +243,52 @@ h3 {
 .price_box {
     width: 1481px;
     height: 761px;
-    margin:0 auto;
+    margin:0 auto 140px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .center {
     text-align: center;
+}
+
+#price2{
+    display: block;
+    text-align: center;
+}
+#price2 p{
+    display: block;
+    margin-bottom: 60px;
+    font-size: 18px;
+}
+#price2 a{
+    display: inline;
+}
+
+#personal{
+height: 761px;
+background: #043873;
+box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.08);
+border-radius: 10px;
+color: white;
+border: none;
+}
+
+#personal h3{
+    color: #FFE492;
+}
+
+#personal span{
+    color: white;
+}
+
+#personal li{
+    color: white;
+}
+
+#personal #personalprice{
+    color: #FFE492;
 }
 
 /*  you work everywhere */
@@ -235,14 +302,18 @@ h3 {
 }
 
 /* sponsors */
-#id {
+#sponsors{
+    display: block;
+}
+
+#center {
     margin-bottom: 100px;
 }
 
 .sponsors {
     display: flex;
     justify-content: space-between;
-    padding: 140px 220px;
+    padding: 0px 220px 140px;
 }
 
 .sponsors img {
@@ -253,20 +324,34 @@ h3 {
 /* work with your favorite apps */
 #apps {
     height: 750.8px;
-    padding: 140px, 220px, 140px, 220px;
+    gap: 100px;
+    /* padding: 140px, 220px, 140px, 220px; */
     color: white;
     background: #043873;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 140px;
+    background-image: url(/assets/img/Elementapps.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.apps{
+    display: block;
 }
 
 /* clients */
+#clients{
+    display: flex;
+    flex-direction: column;
+}
 .clients {
     height: 994.4608154296875px;
     left: 0px;
     top: 7876.015625px;
     border-radius: 0px;
-    padding: 140px 220px 140px 220px;
+    padding: 0px 32px 140px 220px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 
 }
 
@@ -280,6 +365,7 @@ h3 {
     align-items: flex-start;
     justify-content: center;
     padding: 60px 40px;
+    margin: 60px 32px;
 }
 
 .quote {
@@ -330,4 +416,88 @@ h3 {
     color: white;
     display: block;
     font-weight: 400;
+}
+
+/* ボタン */
+a {
+font-size: 18px;
+background-color: #4F9CF9;
+color: white;
+height: 60px;
+width: fit-content;
+left: 150px;
+top: 0px;
+border-radius: 8px;
+padding: 16px 24px 16px 24px;
+display: block;
+}
+
+a:hover{
+    opacity: 0.7;
+}
+
+
+/* ハイライト */
+#management{
+    background-image: url(/assets/img/lines/Element\ management.png);
+    background-size: 200%;
+    background-repeat: no-repeat;
+    background-position: 20px ;
+}
+
+
+#together{
+    background-image: url(/assets/img/lines/Element\ together.png);
+    background-size: 110%;
+    background-repeat: no-repeat;
+    background-position: 0px  50px;
+}
+
+#extension{
+    background-image: url(/assets/img/lines/Element\ extension.png);
+    background-size: 119%;
+    background-repeat: no-repeat;
+    background-position: -72px 65px;
+}
+
+#yourneeds{
+    background-image: url(/assets/img/lines/Element\ yourneed.png);
+    background-size: 155%;
+    background-repeat: no-repeat;
+    background-position: 0px 21px;
+}
+
+#yourplan{
+    background-image: url(/assets/img/lines/Element\ Yourplpan.png);
+    background-size: 109%;
+    background-repeat: no-repeat;
+    background-position: 0 56px;
+}
+
+#youare{
+    background-image: url(/assets/img/lines/Element\ youare.png);
+    background-size: 125%;
+    background-repeat: no-repeat;
+    background-position: 0 56px;
+}
+
+#yourdata{
+    background-image: url(/assets/img/lines/Element\ yourdata.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 0 56px;
+}
+
+#spon{
+    background-image: url(/assets/img/lines/Element\ sponsors.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 0 54px;
+}
+
+#says{
+    background-image: url(/assets/img/lines/Element\ says.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 0 54px;
 }
